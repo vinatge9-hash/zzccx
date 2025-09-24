@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Brew & Beans - Gallery</title>
+  <meta name='description' content='A snapshot of Brew & Beans ambiance, drinks, and pastries.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap' rel='stylesheet'>
+</head>
+<body class='font-sans antialiased bg-white text-gray-800'>
+  <header>
+    <nav class='bg-white shadow sticky top-0 z-50'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-between items-center h-16'>
+          <div class='flex-shrink-0'>
+            <a href='index.html' class='text-2xl font-bold text-gray-800'>Brew & Beans</a>
+          </div>
+          <div class='hidden md:block'>
+            <div class='ml-10 flex items-baseline space-x-4'>
+              <a href='index.html' class='text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm'>Home</a>
+              <a href='menu.html' class='text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm'>Menu</a>
+              <a href='gallery.html' class='text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm'>Gallery</a>
+              <a href='about.html' class='text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm'>About</a>
+              <a href='contact.html' class='text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm'>Contact</a>
+            </div>
+          </div>
+          <div class='md:hidden'>
+            <button id='mobile-menu-button' class='text-gray-800 hover:text-gray-600 focus:outline-none'>
+              <span class='sr-only'>Open menu</span>
+              <svg class='h-6 w-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id='mobile-menu' class='hidden md:hidden'>
+        <a href='index.html' class='block px-4 py-2 text-sm'>Home</a>
+        <a href='menu.html' class='block px-4 py-2 text-sm'>Menu</a>
+        <a href='gallery.html' class='block px-4 py-2 text-sm'>Gallery</a>
+        <a href='about.html' class='block px-4 py-2 text-sm'>About</a>
+        <a href='contact.html' class='block px-4 py-2 text-sm'>Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class='py-16'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h1 class='text-3xl font-semibold font-[Montserrat] mb-6'>Gallery</h1>
+        <p class='text-gray-700 mb-6'>A visual tour of our cozy space, drinks, and pastry selections.</p>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <img src='https://images.unsplash.com/photo-1643270676135-ee67127e2895?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxjb3p5JTIwY29mZmVlJTIwc2hvcCUyMGludGVyaW9yJTIwd2l0aCUyMGN1c3RvbWVycyUyMGFuZCUyMGJhcmlzdGElMjBhdCUyMHdvcmt8ZW58MHwwfHx8MTc1ODYxMDY2M3ww&ixlib=rb-4.1.0&q=80&w=1080' alt='Cozy seating area' class='w-full h-48 object-cover rounded-lg'>
+          <img src='https://images.unsplash.com/photo-1610492273376-5ecb6223fe7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxiYXJpc3RhJTIwcHVsbGluZyUyMGVzcHJlc3NvJTIwc2hvdHxlbnwwfDB8fHwxNzU4NzIxNDQwfDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Barista making espresso' class='w-full h-48 object-cover rounded-lg'>
+          <img src='https://pixabay.com/get/g96592f45a3d071d4626247b0407b87182dbaff45d0750f1060f0ece4c335d475f26c3eb057b7772e02a1970eda3caa4fd05e8cf439cdff59daf4d7d36cd2aa01_640.jpg' alt='Latte art in ceramic cup' class='w-full h-48 object-cover rounded-lg'>
+          <img src='https://images.pexels.com/photos/10513305/pexels-photo-10513305.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Pastry display' class='w-full h-48 object-cover rounded-lg'>
+          <img src='https://images.pexels.com/photos/4820663/pexels-photo-4820663.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Coffee beans roasting' class='w-full h-48 object-cover rounded-lg'>
+          <img src='https://pixabay.com/get/g3f8b21aa59394d8acc46659799706ab4d2922e09c2ba5344bcc19f0bde486cad9507eebe8b9cd6732450034b12fe5eb0_640.jpg' alt='Cafe exterior' class='w-full h-48 object-cover rounded-lg'>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class='bg-amber-900 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-8'>
+      <p class='text-sm'>© 2025 Brew & Beans. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuButton) {
+      mobileMenuButton.addEventListener('click', function(){
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
